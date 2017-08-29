@@ -53,9 +53,12 @@ makeDancer.prototype.step = function() {
 
   var context = this;
   // setTimeout(context.step, context.timeBetweenSteps);
-  setTimeout(function() {
-    this.step();
-  }.bind(context), context.timeBetweenSteps);
+  setTimeout(this.step.bind(context), context.timeBetweenSteps);
+
+
+  // setTimeout(function() {
+  //   this.step();
+  // }.bind(context), context.timeBetweenSteps);
 
 };
 
