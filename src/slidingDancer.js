@@ -8,7 +8,13 @@ makeSlidingDancer.prototype.constructor = makeSlidingDancer;
 
 
 makeSlidingDancer.prototype.step = function() {
-  this.oldStep();
-  this.$node.animate( { 'left': '+=200px'} );
-  this.$node.animate( { 'left': '-=200px'} );
+  if (this.stepping) {
+    this.oldStep();
+    this.$node.animate( { 'left': '+=200px'} );
+    this.$node.animate( { 'left': '-=200px'} );
+  }
+};
+
+makeSlidingDancer.prototype.shake = function() {
+
 };

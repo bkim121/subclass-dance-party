@@ -1,9 +1,11 @@
 body, html{
   height:100%;
-}
+} 
 body{
   margin: 0px;
-  background-color:#444;
+  background-image: url('http://www.walkingtaco.com/wp-content/uploads/2013/12/Avengers-destruction.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
   font-size: 18px;
 }
 body, a:link, a:visited, a:active{
@@ -16,12 +18,17 @@ body, a:link, a:visited, a:active{
 .topbar{
   height:32px;
   background-color: #555;
-}
+}s
 .title{
   background-color: #777;
 }
 .dancer{
-  border:10px solid red;
+  //border:1px solid red;
   border-radius:10px;
+  height: 375px;
+  width: 250px;
+  display: block;
   position:absolute;
+  background: url('hulk.png') no-repeat 0 0;
+  background-size: cover;
 }
